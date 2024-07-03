@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d79d9f, #a56b65);
+    /* Diagonal gradient background */
+    height: 100vh;
+}
+
+nav {
+    background-color: #a56b65;
+    /* Navigation bar color */
+    color: #e3c5c4;
+    /* Navigation text color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #e3c5c4;
+    /* Navigation link color */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+section#home {
+    padding: 50px;
+}
+
+section#about {
+    padding: 50px;
+}
+
+.content,
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text,
+.about-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    /* Adjust text alignment as needed */
+    padding-right: 20px;
+    /* Space between text and image */
+}
+
+.text h1,
+.about-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    /* Adjust color as needed */
+}
+
+#dynamic-text {
+    font-size: 1.5em;
+    color: #333;
+    min-height: 1.5em;
+    /* Ensure this matches the font size of the dynamic text */
+    white-space: pre;
+    /* Preserve spaces and line breaks */
+}
+
+.image,
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    /* Ensure image fits within its container */
+    height: auto;
+    display: block;
+    /* Remove any default inline alignment */
+    border-radius: 8px;
+    /* Optional: add border radius */
+}
