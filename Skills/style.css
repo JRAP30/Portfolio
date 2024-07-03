@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d79d9f, #a56b65);
+    /* Diagonal gradient background */
+    height: 100vh;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+nav {
+    background-color: #a56b65;
+    /* Navigation bar color */
+    color: #e3c5c4;
+    /* Navigation text color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #e3c5c4;
+    /* Navigation link color */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    height: calc(100vh - 60px);
+    /* Adjust height to exclude the navbar height */
+}
+
+.skills-section h1,
+.skills-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills-section h2 {
+    margin-top: 50px;
+    font-size: 1.8em;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent black background */
+    color: #e3c5c4;
+    /* Text color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    /* Initial position below the view */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    animation: fadeInUp 0.5s forwards;
+    max-width: 200px;
+    /* Set a max-width for cards */
+    margin: auto;
+    /* Center horizontally */
+}
+
+.skill-card img {
+    max-width: 100%;
+    max-height: 50px;
+    /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 1em;
+    color: #e3c5c4;
+    /* Text color */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

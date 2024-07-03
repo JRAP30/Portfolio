@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d79d9f, #a56b65);
+    /* Diagonal gradient background */
+    height: 100vh;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+nav {
+    background-color: #a56b65;
+    /* Navigation bar color */
+    color: #e3c5c4;
+    /* Navigation text color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #e3c5c4;
+    /* Navigation link color */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 50px;
+    position: relative;
+    /* Ensure relative positioning for .about-content */
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 50px;
+    position: relative;
+    /* Relative positioning for .about-content */
+    z-index: 1;
+    /* Ensure content is above images */
+}
+
+.about-text {
+    flex: 1;
+    position: relative;
+    /* Relative positioning for text */
+    z-index: 1;
+    /* Ensure text is above images */
+}
+
+.about-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    /* Adjust color as needed */
+}
+
+.about-text .paragraph {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    /* Initial position below the view */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.about-images {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 0;
+    /* Ensure images are behind text */
+}
+
+.about-images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #e3c5c4;
+    /* Border color */
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Animation for the paragraphs and images to slide up */
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-paragraph {
+    animation: slideUp 0.5s forwards;
+}
+
+.animate-image {
+    animation: fadeIn 0.5s forwards;
+}
