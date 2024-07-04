@@ -1,11 +1,9 @@
-:root{
-    --nav-background : #ECABAB;
-    --nav-text-color:#FCF5F5;
-    --nav-text-shadow:#b2b2b4;
-    --body-text-color:#58585A;
+:root {
+    --nav-background: #ECABAB;
+    --nav-text-color: #FCF5F5;
+    --nav-text-shadow: #b2b2b4;
+    --body-text-color: #58585A;
 }
-
-
 
 body {
     font-family: Arial, sans-serif;
@@ -51,9 +49,9 @@ section#home {
     flex-wrap: wrap;
 }
 
-.text{
+.text {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     text-align: left;
@@ -78,7 +76,7 @@ section#home {
     display: flex;
     justify-content: center;
     align-items: center;
-} 
+}
 
 img {
     max-width: 100%;
