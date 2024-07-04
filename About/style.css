@@ -2,12 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #d79d9f, #a56b65);
-    /* Diagonal gradient background */
     height: 100vh;
-    overflow-x: hidden;
-    /* Prevent horizontal scroll */
+    background-image: url("https://images.rawpixel.com/image_social_landscape/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yODMtbnVubnktMjE2LWcuanBn.jpg");
+    background-size: cover;
 }
+
 
 nav {
     background-color: #a56b65;
