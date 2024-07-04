@@ -1,18 +1,23 @@
+:root{
+    --nav-background : #ECABAB;
+    --nav-text-color:#FCF5F5;
+    --nav-text-shadow:#b2b2b4;
+    --body-text-color:#58585A;
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /*background: linear-gradient(135deg, #d79d9f, #a56b65);*/
-    /* Diagonal gradient background */
     height: 100vh;
     background-image: url("https://images.rawpixel.com/image_social_landscape/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yODMtbnVubnktMjE2LWcuanBn.jpg");
-background-size: cover;}
+    background-size: cover;
+}
 
 nav {
-    background-color: #a56b65;
-    /* Navigation bar color */
-    color: #e3c5c4;
-    /* Navigation text color */
+    background-color: var(--nav-background);
     padding: 10px 0;
     text-align: center;
 }
@@ -29,71 +34,54 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e3c5c4;
-    /* Navigation link color */
+    color: var(--nav-text-color);
     text-decoration: none;
     font-size: 1.2em;
+    text-shadow: 1px 1px var(--nav-text-shadow);
 }
 
 section#home {
     padding: 50px;
 }
 
-section#about {
-    padding: 50px;
-}
-
-.content,
-.about-content {
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.text,
-.about-text {
-    flex: 1;
+.text{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
     align-items: flex-start;
     text-align: left;
-    /* Adjust text alignment as needed */
-    padding-right: 20px;
-    /* Space between text and image */
+    width: 300px;
 }
 
-.text h1,
-.about-text h1 {
+.text h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #333;
-    /* Adjust color as needed */
+    color: var(--body-text-color);
 }
 
-#dynamic-text {
+#phrases {
     font-size: 1.5em;
-    color: #333;
+    color: var(--body-text-color);
     min-height: 1.5em;
-    /* Ensure this matches the font size of the dynamic text */
-    white-space: pre;
-    /* Preserve spaces and line breaks */
+    padding-left: 10%;
+    margin: 0;
 }
 
-.image,
-.about-image {
-    flex: 1;
+.image {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} 
 
 img {
     max-width: 100%;
-    /* Ensure image fits within its container */
     height: auto;
     display: block;
-    /* Remove any default inline alignment */
-    border-radius: 8px;
-    /* Optional: add border radius */
 }

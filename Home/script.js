@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const phrases = [
-        "I'm a web developer.",
-        "I create interactive websites.",
-        "I love coding.",
-        "JavaScript is my favorite language.",
-        "Welcome to my portfolio."
+        "Welcome to my Portfolio!",
+        "Software Developer",
+        "Data Enthusiast",
+        "Cat Lover",
+        "Nature Explorer"
     ];
 
     let currentPhraseIndex = 0;
     let currentLetterIndex = 0;
-    const dynamicTextElement = document.getElementById("dynamic-text");
+    const dynamicTextElement = document.getElementById("phrases");
     let isDeleting = false;
 
     function updateText() {
@@ -23,18 +23,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (!isDeleting && currentLetterIndex === currentPhrase.length) {
-            setTimeout(() => { isDeleting = true; }, 2000); // Pause before deleting
+            setTimeout(() => { isDeleting = true; }, 1200); 
         } else if (isDeleting && currentLetterIndex === 0) {
             isDeleting = false;
             currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
-            setTimeout(updateText, 500); // Pause before typing the next phrase
+            setTimeout(updateText, 500);
             return;
         }
 
-        const speed = isDeleting ? 50 : 100; // Adjust speed here
+        const speed = isDeleting ? 50 : 100;
         setTimeout(updateText, speed);
     }
 
-    updateText(); // Start the typing effect
+    updateText(); 
 
 });
