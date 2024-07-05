@@ -1,34 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Arrays for skills categories
     const programmingSkills = [
-        { logoUrl: 'logo1.png', name: 'JavaScript' },
-        { logoUrl: 'logo2.png', name: 'Python' },
-        { logoUrl: 'logo3.png', name: 'Java' },
-                { logoUrl: 'logo1.png', name: 'JavaScript' },
-        { logoUrl: 'logo2.png', name: 'Python' },
-        { logoUrl: 'logo3.png', name: 'Java' }
-        // Add more programming skills as needed
+        { logoUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', name: 'JavaScript' },
+        { logoUrl: 'https://cdn-icons-png.flaticon.com/512/1051/1051277.png', name: 'HTML' },
+        { logoUrl: 'https://cdn-icons-png.flaticon.com/512/16020/16020753.png', name: 'CSS' },
+        { logoUrl: 'https://cdn-icons-png.flaticon.com/512/4248/4248443.png', name: 'SQL' },
+        { logoUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968350.png', name: 'Python' },
+        { logoUrl: 'https://cdn-icons-png.flaticon.com/512/3825/3825480.png', name: 'VBA' }
     ];
 
     const itSkills = [
-        { logoUrl: 'logo4.png', name: 'Networking' },
-        { logoUrl: 'logo5.png', name: 'Security' },
-        { logoUrl: 'logo6.png', name: 'Database Management' }
-        // Add more IT skills as needed
+        { logoUrl: 'https://seeklogo.com/images/P/power-bi-icon-logo-E1B451ED39-seeklogo.com.png', name: 'Power BI' },
+        { logoUrl: 'https://cdn-icons-png.flaticon.com/512/16509/16509278.png', name: 'Excel' },
+        { logoUrl: 'https://cdn-icons-png.flaticon.com/512/16509/16509293.png', name: 'Word' },
+        { logoUrl: 'https://cdn-icons-png.flaticon.com/512/16509/16509298.png', name: 'PowerPoint' },
     ];
 
     const noCodeSkills = [
-        { logoUrl: 'logo7.png', name: 'WordPress' },
-        { logoUrl: 'logo8.png', name: 'Wix' },
-        { logoUrl: 'logo9.png', name: 'Shopify' }
-        // Add more no code skills as needed
-    ];
-
-    const languageSkills = [
-        { logoUrl: 'logo10.png', name: 'English' },
-        { logoUrl: 'logo11.png', name: 'Spanish' },
-        { logoUrl: 'logo12.png', name: 'French' }
-        // Add more language skills as needed
+        { logoUrl: 'https://asset.brandfetch.io/idytCFzVcY/id3yX15qlX.svg', name: 'Softr' },
+        { logoUrl: 'https://res.cloudinary.com/dbyioi2qq/q_auto/v1678345076/sdQwjLNf/variantdarkfvicopng_1678345076_71011.png', name: 'CodeDesign' },
+        { logoUrl: 'https://asset.brandfetch.io/idMw8qr5lW/id0MbSsj8u.png', name: 'Gumroad' },
+        { logoUrl: 'https://asset.brandfetch.io/idgSjSXjpz/idDUu_JkOz.svg', name: 'Glide' },
+        { logoUrl: 'https://asset.brandfetch.io/iddsnRzkxS/iddyj0wl13.svg', name: 'Airtable' },
+        { logoUrl: 'https://asset.brandfetch.io/idNMs_nMA0/iddCCtmu74.jpeg', name: 'Zapier' }
     ];
 
     // Function to create skill elements
@@ -37,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         skills.forEach((skill, index) => {
             const skillCard = document.createElement('div');
             skillCard.classList.add('skill-card');
-            skillCard.style.animationDelay = `${index * 0.2}s`; // Delay animation
+            skillCard.style.animationDelay = `${index * 0.3}s`;
 
             const logo = document.createElement('img');
             logo.src = skill.logoUrl;
@@ -53,15 +46,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Create Programming skills
     createSkillElements(programmingSkills, 'programming-skills');
 
-    // Create IT skills
     createSkillElements(itSkills, 'it-skills');
 
-    // Create No code skills
     createSkillElements(noCodeSkills, 'no-code-skills');
 
-    // Create Language skills
     createSkillElements(languageSkills, 'language-skills');
 });
