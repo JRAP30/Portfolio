@@ -38,7 +38,7 @@ nav ul li a {
     text-shadow: 2px 2px var(--nav-text-shadow);
 }
 
-#home {
+#main-page {
     padding: 50px;
 }
 
@@ -49,6 +49,25 @@ nav ul li a {
     flex-wrap: wrap;
 }
 
+h1,
+p {
+    color: var(--body-text-color);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.4em;
+    min-height: 1.5em;
+    padding-left: 10%;
+    margin: 0;
+}
+
 .text {
     display: flex;
     flex-direction: column;
@@ -56,20 +75,6 @@ nav ul li a {
     align-items: flex-start;
     text-align: left;
     width: 300px;
-}
-
-.text h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: var(--body-text-color);
-}
-
-#phrases {
-    font-size: 1.4em;
-    color: var(--body-text-color);
-    min-height: 1.5em;
-    padding-left: 10%;
-    margin: 0;
 }
 
 .image {

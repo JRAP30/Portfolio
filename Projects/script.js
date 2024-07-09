@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Arrays for Code and No code projects
+
     const codeProjects = [
         {
             imageUrl: "Guess.png",

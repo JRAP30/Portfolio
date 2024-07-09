@@ -51,6 +51,4 @@ document.addEventListener('DOMContentLoaded', function () {
     createSkillElements(itSkills, 'it-skills');
 
     createSkillElements(noCodeSkills, 'no-code-skills');
-
-    createSkillElements(languageSkills, 'language-skills');
 });

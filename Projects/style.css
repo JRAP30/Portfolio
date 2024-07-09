@@ -9,7 +9,7 @@ body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 125vh;
     background-image: url("https://images.rawpixel.com/image_social_landscape/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yODMtbnVubnktMjE2LWcuanBn.jpg");
     background-size: cover;
 }
@@ -38,8 +38,47 @@ nav ul li a {
     text-shadow: 2px 2px var(--nav-text-shadow);
 }
 
-#projects {
+#main-page {
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2,
+p {
+    color: var(--body-text-color);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: 650;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: var(--nav-text-shadow);
+    margin: 0px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.9em;
+    margin: 10px 0px 0px 0px;
 }
 
 .content {
@@ -47,23 +86,6 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.content h1,
-.content h2 {
-    text-align: center;
-    color: var(--body-text-color);
-}
-
-.content h2 {
-    margin-top: 50px;
-    font-size: 1.8em;
-    margin-bottom: 30px;
-}
-
-.content h1 {
-    font-size: 2.5em;
-    margin: 0;
 }
 
 .projects-grid {
@@ -83,7 +105,8 @@ nav ul li a {
     transform: translateY(50px);
     transition: opacity 0.5s ease, transform 0.5s ease;
     animation: fadeInUp 0.5s forwards;
-    max-width: 300px;
+    width: 300px;
+    margin-bottom: 30px;
 }
 
 .project-card img {
@@ -91,20 +114,6 @@ nav ul li a {
     min-height: 150px;
     border-radius: 10px;
     margin-bottom: 10px;
-}
-
-.project-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: var(--nav-text-shadow);
-    margin: 0px;
-}
-
-.project-card p {
-    font-size: 1em;
-    color: var(--body-text-color);
-    margin: 10px 0px 0px 0px;
-
 }
 
 @keyframes fadeInUp {

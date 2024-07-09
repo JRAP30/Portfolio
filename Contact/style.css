@@ -38,32 +38,38 @@ nav ul li a {
     text-shadow: 2px 2px var(--nav-text-shadow);
 }
 
-#contact {
+#main-page {
     padding: 50px;
-}
-
-
-.contact-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
 
-    text-align: center;
+h1,
+p {
     color: var(--body-text-color);
 }
 
-.contact-section h1 {
+h1 {
+    text-align: center;
     font-size: 2.5em;
     margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: 600;
 }
 
-.contact-item p {
+p {
     font-size: 1.4em;
     margin: 0;
 }
 
-.contact-info {
+ion-icon {
+    color: var(--body-text-color);
+    font-size: 1.6em;
+}
+
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +93,3 @@ nav ul li a {
     gap: 15px;
 }
 
-ion-icon {
-    color: var(--body-text-color);
-    font-size: 1.6em;
-}

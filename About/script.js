@@ -67,9 +67,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (paragraphIndex < paragraphs.length) {
             paragraphs[paragraphIndex].classList.add('animate-paragraph');
             paragraphIndex++;
-            setTimeout(showNextParagraph, 500); // Delay before showing the next paragraph
+            setTimeout(showNextParagraph, 500);
         } else {
-            showNextImage(); // Start showing images after paragraphs
+            showNextImage();
         }
     }
 
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (imageIndex < images.length) {
             images[imageIndex].classList.add('animate-image');
             imageIndex++;
-            setTimeout(showNextImage, 500); // Delay before showing the next image
+            setTimeout(showNextImage, 500);
         }
     }
 
