@@ -1,20 +1,21 @@
+:root {
+    --nav-background: #ECABAB;
+    --nav-text-color: #FCF5F5;
+    --nav-text-shadow: #b2b2b4;
+    --body-text-color: #58585A;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-        height: 100vh;
+    height: 100vh;
     background-image: url("https://images.rawpixel.com/image_social_landscape/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yODMtbnVubnktMjE2LWcuanBn.jpg");
-        background-size: cover;
-
-        
-    }
-
+    background-size: cover;
+}
 
 nav {
-    background-color: #a56b65;
-    /* Navigation bar color */
-    color: #e3c5c4;
-    /* Navigation text color */
+    background-color: var(--nav-background);
     padding: 10px 0;
     text-align: center;
 }
@@ -31,51 +32,63 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e3c5c4;
-    /* Navigation link color */
+    color: var(--nav-text-color);
     text-decoration: none;
     font-size: 1.2em;
+    text-shadow: 1px 1px var(--nav-text-shadow);
 }
 
-.projects-section {
+#projects {
     padding: 50px;
-    position: relative;
-    /* Ensure relative positioning for .projects-section */
 }
 
-.projects-section h1 {
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h1,
+.content h2 {
     text-align: center;
+    color: var(--body-text-color);
+}
+
+.content h2 {
+    margin-top: 50px;
+    font-size: 1.8em;
     margin-bottom: 30px;
 }
 
-.projects-section h2 {
-    margin-top: 50px;
-    font-size: 1.8em;
-    text-align: center;
+.content h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .project-card {
-    background-color: rgba(0, 0, 0, 0.3);
-    /* Semi-transparent black background */
+    background-color: #fcf5f5c5;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     opacity: 0;
     transform: translateY(50px);
-    /* Initial position below the view */
     transition: opacity 0.5s ease, transform 0.5s ease;
     animation: fadeInUp 0.5s forwards;
+    max-width: 300px;
 }
 
 .project-card img {
-    max-width: 100%;
+    max-width: 150px;
+    min-height: 150px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -83,14 +96,15 @@ nav ul li a {
 .project-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #fff;
-    /* White text color */
+    color: var(--nav-text-shadow);
+    margin: 0px;
 }
 
 .project-card p {
-    font-size: 1.1em;
-    color: #ccc;
-    /* Lighter text color */
+    font-size: 1em;
+    color: var(--body-text-color);
+    margin: 10px 0px 0px 0px;
+
 }
 
 @keyframes fadeInUp {
