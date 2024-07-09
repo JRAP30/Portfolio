@@ -38,12 +38,17 @@ nav ul li a {
     text-shadow: 2px 2px var(--nav-text-shadow);
 }
 
+#contact {
+    padding: 50px;
+}
+
+
 .contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+
     text-align: center;
     color: var(--body-text-color);
 }
@@ -75,14 +80,14 @@ nav ul li a {
     width: 50px;
     height: 50px;
     margin-right: 10px;
-    filter: invert(36%); 
+    filter: invert(36%);
 }
 
-#info-icons{
+#info-icons {
     gap: 15px;
 }
 
-ion-icon{
+ion-icon {
     color: var(--body-text-color);
     font-size: 1.6em;
 }

@@ -38,7 +38,7 @@ nav ul li a {
     text-shadow: 2px 2px var(--nav-text-shadow);
 }
 
-#about {
+#main {
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@ h2 {
     font-weight: 650;
 }
 
-strong{
+strong {
     font-weight: 650;
 }
 
@@ -75,20 +75,13 @@ p {
     margin: 15px 0 0 15px;
 }
 
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-}
-
 .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    max-width: 1200px;
 }
 
 .about-text {

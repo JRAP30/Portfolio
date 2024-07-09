@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
     aboutImages.forEach(imageSrc => {
         const img = document.createElement('img');
         img.src = imageSrc;
-        img.alt = "About Me Image";
         aboutImagesContainer.appendChild(img);
     });
 
