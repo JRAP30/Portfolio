@@ -1,5 +1,12 @@
+:root {
+    --nav-background: #ECABAB;
+    --nav-text-color: #FCF5F5;
+    --nav-text-shadow: #b2b2b4;
+    --body-text-color: #58585A;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -7,12 +14,8 @@ body {
     background-size: cover;
 }
 
-
 nav {
-    background-color: #a56b65;
-    /* Navigation bar color */
-    color: #e3c5c4;
-    /* Navigation text color */
+    background-color: var(--nav-background);
     padding: 10px 0;
     text-align: center;
 }
@@ -29,78 +32,102 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e3c5c4;
-    /* Navigation link color */
+    color: var(--nav-text-color);
     text-decoration: none;
     font-size: 1.2em;
+    text-shadow: 2px 2px var(--nav-text-shadow);
 }
 
-section {
+#about {
     padding: 50px;
-    position: relative;
-    /* Ensure relative positioning for .about-content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.about-content {
+h1,
+h2,
+p {
+    color: var(--body-text-color);
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 30px 0 0 0;
+    font-weight: 650;
+}
+
+strong{
+    font-weight: 650;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 15px 0 0 15px;
+}
+
+.about {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0 50px;
-    position: relative;
-    /* Relative positioning for .about-content */
-    z-index: 1;
-    /* Ensure content is above images */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .about-text {
-    flex: 1;
-    position: relative;
-    /* Relative positioning for text */
-    z-index: 1;
-    /* Ensure text is above images */
-}
-
-.about-text h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #333;
-    /* Adjust color as needed */
+    justify-content: left;
+    max-width: 850px;
+    text-align: justify;
 }
 
 .about-text .paragraph {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 20px;
     opacity: 0;
     transform: translateY(50px);
-    /* Initial position below the view */
     transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.about-images {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index: 0;
-    /* Ensure images are behind text */
 }
 
 .about-images img {
-    width: 100px;
-    height: 100px;
+    width: 115px;
+    height: 115px;
     border-radius: 50%;
     border: 5px solid #e3c5c4;
-    /* Border color */
-    margin-bottom: 10px;
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.5s ease;
+    object-fit: fit;
 }
 
-/* Animation for the paragraphs and images to slide up */
+.about-images img:nth-child(odd) {
+    margin-left: 100px;
+}
+
+.about-images img:nth-child(even) {
+    margin-right: 100px;
+}
+
+.about-images {
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
 @keyframes slideUp {
     to {
         opacity: 1;
