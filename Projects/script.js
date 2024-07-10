@@ -1,19 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const codeProjects = [
+
+        {
+            imageUrl: "Quizz.png",
+            imageLink: "https://jrap30.github.io/CatQuizz/",
+            title: "Cat Quiz",
+            text1: "The Cat Quiz was born as a challenge from Just IT, showcasing the skills learned during their bootcamp.",
+            text2: "This fun and educational quiz tests your knowledge of our feline friends, covering cat breeds, behavior, and famous cats in history."
+        },
         {
             imageUrl: "Guess.png",
             imageLink: "https://jrap30.github.io/GuessAnimal/",
             title: "Guess the animal Game",
-            text1: "As the final project for an introductory JavaScript course, ‘Guess the Animal’ is a dinamic word game.",
+            text1: "Created as a final project for an introductory JavaScript course, ‘Guess the Animal’ is a dinamic word game.",
             text2: "When you guess a letter correctly, the image gradually reveals, helping you complete the word."
-        },
-        {
-            imageUrl: "https://example.com/project2.jpg",
-            imageLink: "https://girasol.codedesign.app/",
-            title: "Cat Quiz",
-            text1: "Description of Code Project 2.",
-            text2: ""
         }
     ];
 
@@ -36,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             imageUrl: "https://assets.softr-files.com/applications/157cf6c2-294a-4d76-9a8b-7138a29c1084/assets/8d4d288c-8211-4c74-936b-8ca4b55e1f75.png",
             imageLink: "https://clinica-flor-de-liz.softr.app",
             title: "Flor de Liz",
-            text1: "Management page for a beauty studio. As a studio owner you can track your future appointments and your client's data. As a client you can manager our future appointments and ask for new ones.",
+            text1: "Management page for a beauty studio. As a studio owner you can track your future appointments and your client's data. As a client you can manager your future appointments and ask for new ones.",
             text2: "For this project the tools used were Softr, Airtable and Zapier."
         }
     ];
