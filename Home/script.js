@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const phrases = [
         "Welcome to my Portfolio!",
-        "Software Developer",
-        "Data Enthusiast",
+        "Junior Software Developer",
+        "Data Analyst",
         "Cat Lover",
         "Nature Explorer"
     ];
